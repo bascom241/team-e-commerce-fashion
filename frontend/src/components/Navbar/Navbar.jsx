@@ -1,6 +1,8 @@
+
 import React from "react";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import { BsPersonFillCheck } from "react-icons/bs";
+
 
 const Navbar = () => {
   return (
@@ -17,7 +19,8 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  );
+  )
 };
 
-export default Navbar;
+
+export default Navbar
