@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { PiShoppingCart } from "react-icons/pi";
 import { FaRegHeart } from "react-icons/fa6";
 import { BsPersonFillCheck, BsSearchHeart, BsList, BsX } from "react-icons/bs";
@@ -6,8 +6,24 @@ import { BsPersonFillCheck, BsSearchHeart, BsList, BsX } from "react-icons/bs";
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const handleMenuToggle = (id) => {
-    setOpenMenu(openMenu === id ? null : id);
+  const [timer, setTimer] = useState(null);
+
+  // Handle closing the menu after a delay
+  const handleCloseMenu = () => {
+    if (timer) clearTimeout(timer);
+    const newTimer = setTimeout(() => {
+      setOpenMenu(null);
+    }, 300); // Adjust the delay as needed
+    setTimer(newTimer);
+  };
+
+  const handleMouseEnter = (id) => {
+    if (timer) clearTimeout(timer);
+    setOpenMenu(id); // Open the menu when mouse enters
+  };
+
+  const handleMouseLeave = () => {
+    handleCloseMenu(); // Set a delay before closing
   };
 
   const toggleMobileMenu = () => {
@@ -62,9 +78,9 @@ const Navbar = () => {
             <input
               type="text"
               placeholder="Search"
-              className="focus:outline-none border py-1 pl-6 pr-12 rounded-lg w-full"
+              className="focus:outline-none border py-1 p-8 rounded-lg w-full "
             />
-            <BsSearchHeart className="absolute top-1/2 transform -translate-y-1/2 text-black" />
+            <BsSearchHeart className="absolute top-1/2 ml-3 transform -translate-y-1/2 text-black" />
           </div>
 
           <div className="flex items-center gap-3">
@@ -88,11 +104,13 @@ const Navbar = () => {
 
       <div className="hidden md:flex gap-5 justify-between font-medium mt-4 relative">
         {menuItems.map((item) => (
-          <div key={item.id} className="relative">
-            <button
-              onClick={() => handleMenuToggle(item.id)}
-              className="hover:text-gray-400 focus:outline-none"
-            >
+          <div
+            key={item.id}
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(item.id)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <button className="hover:text-gray-400 focus:outline-none">
               {item.label}
             </button>
 
