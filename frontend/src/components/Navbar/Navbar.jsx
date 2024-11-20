@@ -61,6 +61,11 @@ const Navbar = () => {
     },
   ];
 
+
+
+
+const Navbar = () => {
+
   return (
     <div className="p-6 md:px-24">
       <div className="flex justify-between items-center">
