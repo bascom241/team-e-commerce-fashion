@@ -1,14 +1,10 @@
-<<<<<<< HEAD
-import React from "react";
-import { FaShoppingCart, FaHeart } from "react-icons/fa";
-import { BsPersonFillCheck } from "react-icons/bs";
-=======
 
 import React from "react";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import { BsPersonFillCheck } from "react-icons/bs";
 
->>>>>>> 7a58a0c38dc6ab9b0695e3abef0fa5f06c789f43
+
+
 
 const Navbar = () => {
   return (
@@ -25,13 +21,8 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-  );
-};
-=======
   )
 };
 
->>>>>>> 7a58a0c38dc6ab9b0695e3abef0fa5f06c789f43
 
 export default Navbar;
