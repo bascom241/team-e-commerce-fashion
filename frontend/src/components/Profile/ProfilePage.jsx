@@ -1,6 +1,8 @@
 import { CgProfile } from "react-icons/cg";
 import { BsBox } from "react-icons/bs";
 import { FaRegAddressCard } from "react-icons/fa";
+import { MdAttachMoney } from "react-icons/md";
+
 import { CiLock } from "react-icons/ci";
 
 const ProfilePage = () => {
@@ -22,7 +24,13 @@ const ProfilePage = () => {
             <span className="text-lg">
               <BsBox size={28} />
             </span>
-            <span>Orders</span>
+            <span>Transactions</span>
+          </li>
+          <li className="flex items-center space-x-3  hover:shadow-lg p-4">
+            <span className="text-lg">
+              <MdAttachMoney size={28} />
+            </span>
+            <span>Wallet</span>
           </li>
           <li className="flex items-center space-x-3  hover:shadow-lg p-4">
             <span className="text-lg">
