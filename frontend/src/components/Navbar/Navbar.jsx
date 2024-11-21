@@ -36,7 +36,7 @@ const Navbar = () => {
     <hr className="mx-12 my-4"/>
     <div>
     <ul className="flex justify-center items-center gap-14 py-2">
-      <NavLink className="hover:text-black/40">Home</NavLink>
+      <NavLink className="hover:text-black/40" to='/'>Home</NavLink>
       <Link className="hover:text-black/40">Jalabia</Link>
       <Link className="hover:text-black/40">Tops</Link>
       <Link className="hover:text-black/40">Trousers</Link>
