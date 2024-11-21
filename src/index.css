@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.volkhov-regular {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.volkhov-bold {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.volkhov-regular-italic {
+  font-family: "Volkhov", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.volkhov-bold-italic {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-style: italic;
+}
