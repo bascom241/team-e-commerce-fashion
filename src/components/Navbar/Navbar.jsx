@@ -2,6 +2,7 @@ import  { useState } from "react";
 import { PiShoppingCart } from "react-icons/pi";
 import { FaRegHeart } from "react-icons/fa6";
 import { BsPersonFillCheck, BsSearchHeart, BsList, BsX } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -96,10 +97,11 @@ const Navbar = () => {
               size={20}
               className="text-white bg-black p-1 rounded-lg w-9 h-9 flex items-center justify-center cursor-pointer"
             />
-            <BsPersonFillCheck
+           <Link to="/login"> <BsPersonFillCheck
               size={20}
-              className="text-white bg-black p-1 rounded-lg w-9 h-9 flex items-center justify-center cursor-pointer"
-            />
+              className="text-white bg-black p-1 rounded-lg w-9 h-9 flex items-center 
+              justify-center cursor-pointer"
+            /></Link>
           </div>
         </div>
       </div>

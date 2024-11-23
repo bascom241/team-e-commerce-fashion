@@ -1,5 +1,5 @@
 
-import { fashionItems } from './Classfication'
+import products from '../data';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -15,7 +15,7 @@ const Footer = () => {
     <div className=''>
         <div className='text-center'>
             <h1 className='text-[40px] font-semibold'>Offers</h1>
-            <p className='text-gray-400'>Explore the latest trends in women's fashion, 
+            <p className="text-gray-400">Explore the latest trends in women fashion, 
             from elegant dresses to stylish accessories, and stay ahead of the curve!</p>
         </div>
         <div className='flex px-3 md:px-[120px] pt-16'>
@@ -28,7 +28,7 @@ const Footer = () => {
               modules={[ Navigation]}
               className="mySwiper md:-mb-[60px]">
 
-            {fashionItems.map((img, index )=> {
+            {products.map((img, index )=> {
             return  <SwiperSlide key={index}> <img src={img.image} alt='images'  className='h-[70%]'/> </SwiperSlide>
                 
             })}
@@ -65,7 +65,7 @@ const Footer = () => {
                         </a></li>
                     <li><a href='#'>Sports & Activewear
                         </a></li>
-                    <li><a href='#'>Men's Clothing
+                    <li><a href='#'>Men Clothing
                     </a></li>
                 </ul>
             </div>

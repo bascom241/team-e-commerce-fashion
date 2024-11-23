@@ -3,6 +3,7 @@
 
 import { useState } from 'react'
 import products from "../../components/data";
+import Signup from '../../components/Account/SignUp';
 
 const Home = () => {
 
@@ -12,7 +13,6 @@ const Home = () => {
   return (
     <div>
       <div></div>
-
     
       <div>
             <div className="text-center py-[40px]">
@@ -21,10 +21,10 @@ const Home = () => {
             <p className="text-gray-400">Finding Best Products Now in Your Fingertips</p>
             </div>
             <div>
-                <div className="flex justify-center gap-5 flex-wrap w-[100%] md:w-[1349px]">
+                <div className="flex justify-center px-20 md:px-[96px] gap-5 flex-wrap">
                    {list.map(item =>{
                  return   <>
-                    <div className="flex border items-center px-10 h-[122px] rounded-xl gap-5">
+                    <div className="flex border items-center px-10 h-[122px] w-[100%] md:w-[237px] rounded-xl gap-5">
 
                     <p>{item.category}</p>
                     <img src={item.image} alt="item" className="h-20"/>
