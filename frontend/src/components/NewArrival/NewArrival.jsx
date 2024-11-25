@@ -8,7 +8,7 @@ const NewArrival = () => {
     return (
         <div>
             <div>
-            <ul className='flex gap-8 items-center justify-center my-4'>        
+            <ul className='sm:flex gap-8 items-center justify-center my-4 grid grid-cols-3 px-4'>        
                 <li className='bg-black/10 py-2 px-6 rounded-[5px] transform transition-all duration-300 hover:bg-black hover:text-white'>All</li>
                 <li className='bg-black/10 py-2 px-6 rounded-[5px] transform transition-all duration-300 hover:bg-black hover:text-white'>Jalabia</li>
                 <li className='bg-black/10 py-2 px-6 rounded-[5px] transform transition-all duration-300 hover:bg-black hover:text-white'>Tops</li>
@@ -18,8 +18,8 @@ const NewArrival = () => {
                 </ul>
             </div>
 
-            <div className='grid grid-cols-4 justify-items-center gap-8 px-10 mt-16 '>
-            {productList.map((product, index)=> (<div key={index} className='bg-white shadow-lg p-4 border flex  gap-4 flex-col w-64 h-80 rounded-md'>
+            <div className='grid grid-cols-1 sm:grid-cols-4 justify-items-center gap-8 px-10 mt-16 '>
+            {productList.map((product, index)=> (<div key={index} className='bg-white shadow-lg p-4 border flex  gap-4 flex-col sm:w-64 w-full  h-80 rounded-md'>
                 <img src={product.image} className='w-full h-40 object-contain'/>
                 <h4 className='px-6'>{product.name}</h4>
                 <p className='px-6'>{product.category}</p>
