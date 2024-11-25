@@ -56,7 +56,7 @@ const Signup= () => {
                     </label>
                 </div>
                 <div className='flex justify-center'>
-                <button type="submit" className='bg-gray-500 w-[100%] md:w-[40%] py-3 rounded-xl text-white'>Create Account</button>
+                <button type="submit" className='bg-gray-500 hover:bg-white hover:border hover:text-black w-[100%] w-[100%] md:w-[40%] py-3 rounded-xl text-white'>Create Account</button>
                 </div>
             <p className='text-center pt-4 '>Already have an account? 
                 <span className='font-bold'><Link to="/login"> Login </Link> </span></p>

@@ -14,20 +14,20 @@ const Login= () => {
 
                 <div className='flex flex-col md:flex-row gap-3 justify-center'>
                     <label>
-                        <input type='text'name='first-name' 
-                        placeholder='First Name' 
+                        <input type='email'name='email' 
+                        placeholder='Enter your email' 
                         className='outline-none py-2 px-3 border-b' required/>
                     </label>
                     <label>
-                        <input type='text'name='last-name' 
-                        placeholder='Last Name'
+                        <input type='password'name='password' 
+                        placeholder='password'
                         className='outline-none py-2 px-3 border-b'
                         required
                         />
                     </label>
                 </div>
                 <div className='flex justify-center py-4'>
-                <button type="submit" className='bg-gray-500 w-[100%] md:w-[40%] 
+                <button type="submit" className='bg-gray-500 hover:bg-white hover:border hover:text-black w-[100%] md:w-[40%] 
                 py-3 rounded-xl text-white'>Login</button>
                 </div>
             <p className='text-center pt-4 '>Don't have an account? <span className='font-bold'>
