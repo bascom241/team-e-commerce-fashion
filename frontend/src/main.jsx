@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LayOut from "./components/LayOut.jsx";
 import Home from "./pages/Home/Home.jsx";
 import ProfilePage from "./components/Profile/ProfilePage";
+import Order from "./components/Order/Order";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       { path: "profile", element: <ProfilePage /> },
+      { path: "order", element: <Order /> },
     ],
   },
 ]);

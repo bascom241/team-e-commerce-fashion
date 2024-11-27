@@ -1,52 +1,10 @@
-import { CgProfile } from "react-icons/cg";
-import { BsBox } from "react-icons/bs";
-import { FaRegAddressCard } from "react-icons/fa";
-import { MdAttachMoney } from "react-icons/md";
-
-import { CiLock } from "react-icons/ci";
+import React from "react";
+import Sidebar from "../Sidebar/Sidebar";
 
 const ProfilePage = () => {
   return (
     <div className="flex flex-col lg:flex-row p-6 lg:p-12  min-h-screen">
-      <div className="w-full lg:w-1/4  p-6 space-y-6">
-        <div>
-          <h2 className="text-xl font-bold">Hello, demo fashionista</h2>
-          <p className="text-lg text-gray-700">demo@fashionista.com</p>
-        </div>
-        <ul className="space-y-4 text-lg">
-          <li className="flex items-center space-x-3  hover:shadow-lg p-4">
-            <span className="text-lg">
-              <CgProfile size={28} />
-            </span>
-            <span>Profile</span>
-          </li>
-          <li className="flex items-center space-x-3  hover:shadow-lg p-4">
-            <span className="text-lg">
-              <BsBox size={28} />
-            </span>
-            <span>Transactions</span>
-          </li>
-          <li className="flex items-center space-x-3  hover:shadow-lg p-4">
-            <span className="text-lg">
-              <MdAttachMoney size={28} />
-            </span>
-            <span>Wallet</span>
-          </li>
-          <li className="flex items-center space-x-3  hover:shadow-lg p-4">
-            <span className="text-lg">
-              <FaRegAddressCard size={28} />
-            </span>
-            <span>Manage Addresses</span>
-          </li>
-          <li className="flex items-center space-x-3  hover:shadow-lg p-4">
-            <span className="text-lg">
-              <CiLock size={28} />
-            </span>
-            <span>Logout</span>
-          </li>
-        </ul>
-      </div>
-
+      <Sidebar />
       <div className="w-full lg:w-3/4 bg-white rounded-md p-8 ml-0 lg:ml-6 mt-6 lg:mt-0">
         <h1 className="text-3xl font-bold mb-6 text-center">My Profile</h1>
         <form className="space-y-6 flex flex-col justify-center items-center">
