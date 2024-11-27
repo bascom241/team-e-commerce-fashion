@@ -1,16 +1,21 @@
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import { Link, NavLink } from "react-router-dom";
-
 import React, { useState, useEffect } from "react";
 import { PiShoppingCart } from "react-icons/pi";
 import { FaRegHeart } from "react-icons/fa6";
+import logo from "../../assets/logo.png";
 import { BsPersonFillCheck, BsSearchHeart, BsList, BsX } from "react-icons/bs";
 
 const Navbar = () => {
   return (
     <>
       <div className="flex justify-between  px:2 sm:py-4 sm:px-16 items-center ">
-        <h1 className="sm:text-4xl text-2xl sm:py-1 py-3 px-6">Fashionista</h1>
+        <div className="flex flex-row gap-2 items-center">
+          <img src={logo} alt="logo" className="h-10" />
+          <h1 className=" text-[18px] sm:py-1 text-[#0037ac]">
+            ARRIDOH FASHION HOME
+          </h1>
+        </div>
 
         <div>
           <ul className="sm:flex gap-2 items-center hidden">

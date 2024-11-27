@@ -30,12 +30,7 @@ const Sidebar = () => {
             <span>Order</span>
           </li>
         </Link>
-        <li className="flex items-center space-x-3  hover:shadow-lg p-4">
-          <span className="text-lg">
-            <FaRegMoneyBillAlt size={28} />
-          </span>
-          <span>Transactions</span>
-        </li>
+
         <li className="flex items-center space-x-3  hover:shadow-lg p-4">
           <span className="text-lg">
             <MdAttachMoney size={28} />
