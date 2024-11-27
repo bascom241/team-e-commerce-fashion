@@ -6,6 +6,9 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import LayOut from "./components/LayOut.jsx";
 import Home from "./pages/Home/Home.jsx";
 import ProfilePage from "./components/Profile/ProfilePage";
+ // If you're using Navigation
+
+
 
 const router = createBrowserRouter([
   {
